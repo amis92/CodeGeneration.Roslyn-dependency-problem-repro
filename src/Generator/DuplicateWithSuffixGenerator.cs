@@ -2,6 +2,7 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.CodeAnalysis.Editing;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -25,6 +26,9 @@ namespace Generator
             var results = SyntaxFactory.List<MemberDeclarationSyntax>();
             // Our generator is applied to any class that our attribute is applied to.
             var applyToClass = (ClassDeclarationSyntax)context.ProcessingNode;
+
+            // invoking dependecy provided member
+            SyntaxGenerator.GetGenerator(new AdhocWorkspace(), LanguageNames.CSharp);
 
             // Apply a suffix to the name of a copy of the class.
             var copy = applyToClass
