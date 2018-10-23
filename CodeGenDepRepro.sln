@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator", "src\Generator\Generator.csproj", "{E5C646E9-68DB-450B-BAE8-F5C3F801B3F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator", "src\Generator\Generator.csproj", "{E5C646E9-68DB-450B-BAE8-F5C3F801B3F7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "src\Library\Library.csproj", "{AAAB2D34-2140-4DF2-8FD2-5A97CB9C52EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator.Attribute", "src\Generator.Attribute\Generator.Attribute.csproj", "{F054E44F-DC96-485F-ABF7-BC0DB9F06A03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generator.Attribute", "src\Generator.Attribute\Generator.Attribute.csproj", "{F054E44F-DC96-485F-ABF7-BC0DB9F06A03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1EF5C0A2-3326-41FA-ACE6-22BF6B185E40}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
